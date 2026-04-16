@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bhargav Todimela | Security-Focused Full Stack Developer</title>
+
+<meta name="description" content="Bhargav Todimela is a KL University developer focused on debugging, network analysis, ethical hacking, and full-stack engineering.">
+<meta name="keywords" content="Bhargav Todimela, KL University, debugging, network analysis, ethical hacking, web developer, React developer, Node.js, MongoDB, Cloudflare, Kali Linux, Python, C, Wireshark">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourdomain.com/">
+
+<meta property="og:title" content="Bhargav Todimela | Developer & Security Specialist">
+<meta property="og:description" content="KL University developer skilled in debugging, ethical hacking, and full-stack web development.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourdomain.com/">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Bhargav Todimela",
+ "url": "https://yourdomain.com/",
+ "image": "https://yourdomain.com/profile.jpg",
+ "sameAs": [
+   "https://github.com/bhargavtodimelaa",
+   "https://www.instagram.com/me_bhargav_t",
+   "https://www.linkedin.com/in/bhargav-todimela-656452366/"
+ ],
+ "jobTitle": "Web Developer & Debugging Specialist",
+ "alumniOf": {
+   "@type": "CollegeOrUniversity",
+   "name": "KL University"
+ },
+ "knowsAbout": [
+   "Debugging",
+   "Network Analysis",
+   "Ethical Hacking",
+   "HTML",
+   "CSS",
+   "JavaScript",
+   "React",
+   "Node.js",
+   "MongoDB",
+   "Cloudflare",
+   "Kali Linux",
+   "Python",
+   "C Programming",
+   "Wireshark"
+ ]
+}
+</script>
+
+<style>
+:root {
+  --bg: #081625;
+  --bg-soft: #10253f;
+  --panel: rgba(14, 33, 55, 0.72);
+  --line: rgba(135, 188, 248, 0.25);
+  --text: #e7f2ff;
+  --muted: #9cc1e7;
+  --accent: #3ad7c4;
+  --accent-2: #ffb84d;
+  --danger: #ff6f6f;
+  --radius-xl: 28px;
+  --radius-md: 16px;
+  --shadow: 0 26px 60px rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background:
+    radial-gradient(1000px 500px at 100% -10%, rgba(255, 184, 77, 0.18), transparent 65%),
+    radial-gradient(900px 500px at -5% 10%, rgba(58, 215, 196, 0.2), transparent 58%),
+    linear-gradient(160deg, #071221 0%, #0d2139 44%, #071a2b 100%);
+  color: var(--text);
+  line-height: 1.65;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.grid-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(182, 220, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(182, 220, 255, 0.045) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at center, black, transparent 75%);
+  z-index: 0;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: 28px 0 60px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(5, 18, 32, 0.65);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 14px;
+  z-index: 50;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.83rem;
+  color: #cde7ff;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.94rem;
+  transition: color 180ms ease;
+}
+
+.nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.hero-copy {
+  padding: 34px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: #d2edff;
+  border: 1px solid rgba(58, 215, 196, 0.45);
+  background: rgba(58, 215, 196, 0.09);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 6px rgba(58, 215, 196, 0.18);
+}
+
+h1 {
+  margin: 16px 0 16px;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  font-size: clamp(2rem, 4vw, 3.7rem);
+}
+
+.headline-highlight {
+  color: #ffd79b;
+}
+
+.subcopy {
+  margin: 0;
+  max-width: 62ch;
+  color: #b6d7f8;
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+}
+
+.cta-row {
+  margin-top: 26px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 17px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  color: #062325;
+  background: linear-gradient(90deg, #3ad7c4 0%, #79f2e2 100%);
+  box-shadow: 0 14px 30px rgba(58, 215, 196, 0.35);
+}
+
+.btn-secondary {
+  color: #e8f4ff;
+  background: rgba(255, 184, 77, 0.13);
+  border: 1px solid rgba(255, 184, 77, 0.42);
+}
+
+.hero-visual {
+  padding: 28px;
+  display: grid;
+  align-content: space-between;
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle at center, rgba(255, 184, 77, 0.5), transparent 68%);
+  right: -85px;
+  top: -80px;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.42);
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.stat {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(7, 23, 39, 0.58);
+  padding: 10px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.section {
+  margin-top: 28px;
+  padding: 28px;
+}
+
+.section-title {
+  margin: 0 0 14px;
+  font-size: 1.35rem;
+  letter-spacing: 0.01em;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #d7ebff;
+  background: rgba(6, 24, 42, 0.68);
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.work-card {
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(8, 25, 44, 0.74);
+  border: 1px solid var(--line);
+}
+
+.work-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.work-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.link-card {
+  display: block;
+  text-decoration: none;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(7, 23, 39, 0.67);
+  color: var(--text);
+  padding: 16px;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(58, 215, 196, 0.65);
+}
+
+.link-card small {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  word-break: break-word;
+}
+
+footer {
+  margin-top: 28px;
+  text-align: center;
+  color: #98bddf;
+  font-size: 0.9rem;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+[data-reveal].in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 560ms ease, transform 560ms ease;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    align-items: center;
+  }
+
+  .avatar {
+    max-width: 220px;
+  }
+
+  .work-grid,
+  .links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .page {
+    width: min(94%, 1120px);
+  }
+
+  .topbar {
+    border-radius: 18px;
+    position: static;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .hero-copy,
+  .hero-visual,
+  .section {
+    padding: 20px;
+  }
+
+  .hero-visual {
+    grid-template-columns: 1fr;
+  }
+
+  .avatar {
+    max-width: 100%;
+  }
+
+  .stat-grid,
+  .work-grid,
+  .links {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+
+</head>
+
+<body>
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<main class="page">
+  <header class="topbar panel" data-reveal>
+    <div class="brand">Bhargav Todimela</div>
+    <nav class="nav" aria-label="Page sections">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+
+    </nav>
+  </header>
+
+  <section class="hero">
+    <article class="hero-copy panel" data-reveal>
+      <div class="eyebrow">KL University Developer</div>
+      <h1>Debug first. Build fast. <span class="headline-highlight">Secure always.</span></h1>
+      <p class="subcopy" id="about">
+        I am Bhargav Todimela, a Btech 1st year full stack developer and security-focused engineer working on debugging-heavy systems,
+        network diagnostics, and scalable web platforms with React, Node.js, and MongoDB.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/bhargav-todimela-656452366/" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+        <a class="btn btn-secondary" href="https://github.com/bhargavtodimelaa" target="_blank" rel="noopener noreferrer">Open GitHub</a>
+      </div>
+    </article>
+
+    <aside class="hero-visual panel" data-reveal>
+      <img class="avatar" src="https://media.licdn.com/dms/image/v2/D4D03AQFbL8oq_9ryrA/profile-displayphoto-scale_200_200/B4DZmqytdzHYAY-/0/1759507045335?e=1778112000&v=beta&t=Fh7FW1iYHBEjnJs3KY5Orqqc8gvR5JULhETNY6Z1AAA" alt="Bhargav Todimela profile">
+      <div class="stat-grid" aria-label="Expertise summary">
+        <div class="stat"><strong>10+</strong><span>Core Technical Domains</span></div>
+        <div class="stat"><strong>Full Stack</strong><span>Frontend to API Debugging</span></div>
+        <div class="stat"><strong>Security</strong><span>Ethical Hacking Mindset</span></div>
+        <div class="stat"><strong>Networks</strong><span>Wireshark + Protocol Analysis</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section panel" id="skills" data-reveal>
+    <h2 class="section-title">Skills and Expertise</h2>
+    <div class="skills">
+      <span class="chip">Debugging and Reverse Engineering</span>
+      <span class="chip">Network Analysis and Packet Inspection</span>
+      <span class="chip">Ethical Hacking and Security Testing</span>
+      <span class="chip">React and Modern Frontend Development</span>
+      <span class="chip">Node.js Backend Engineering</span>
+      <span class="chip">MongoDB Data Modeling</span>
+      <span class="chip">Cloudflare Workers and Networking</span>
+      <span class="chip">Kali Linux Toolkit</span>
+      <span class="chip">Python for Automation</span>
+      <span class="chip">C for Systems Foundations</span>
+    </div>
+  </section>
+
+  <section class="section panel" id="projects" data-reveal>
+    <h2 class="section-title">Project Focus Areas</h2>
+    <div class="work-grid">
+      <article class="work-card">
+        <h3>Web Application Engineering</h3>
+        <p>Designing and delivering robust full-stack products with clean architecture and performance-aware frontend flows.</p>
+      </article>
+      <article class="work-card">
+        <h3>API and Backend Diagnostics</h3>
+        <p>Finding root causes across services, request chains, and edge networking behavior with practical troubleshooting methods.</p>
+      </article>
+      <article class="work-card">
+        <h3>Traffic and Protocol Analysis</h3>
+        <p>Inspecting packets, headers, and protocol interactions to resolve transport issues and optimize system reliability.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section panel" id="connect" data-reveal>
+    <h2 class="section-title">Profiles and Links</h2>
+    <div class="links">
+      <a class="link-card" href="https://github.com/bhargavtodimelaa" target="_blank" rel="noopener noreferrer">
+        GitHub
+        <small>github.com/bhargavtodimelaa</small>
+      </a>
+      <a class="link-card" href="https://www.instagram.com/me_bhargav_t" target="_blank" rel="noopener noreferrer">
+        Instagram
+        <small>instagram.com/me_bhargav_t</small>
+      </a>
+      <a class="link-card" href="https://www.linkedin.com/in/bhargav-todimela-656452366/" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+        <small>linkedin.com/in/bhargav-todimela-656452366</small>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright 2026 Bhargav Todimela. Built with a debugging-first and security-first mindset.</p>
+  </footer>
+</main>
+
+<script>
+const elements = document.querySelectorAll('[data-reveal]');
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+elements.forEach((element, index) => {
+  element.style.transitionDelay = (index * 90) + 'ms';
+  io.observe(element);
+});
+</script>
+
+</body>
+</html>
